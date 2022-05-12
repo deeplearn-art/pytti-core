@@ -93,7 +93,7 @@ def update(
         else:
             im = img.decode_image()
             display.display(im.resize((display_width, display_height), Image.LANCZOS))
-        if show_palette and isinstance(img, PixelImage):
+        if show_palette #and isinstance(img, PixelImage):
             logger.debug("Palette:")
             display.display(img.render_pallet())
 
